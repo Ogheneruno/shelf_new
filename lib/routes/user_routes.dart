@@ -1,5 +1,6 @@
 import 'package:shelf/shelf.dart';
 import 'package:shelf_new/autthControllers/firebase_controller.dart';
+import 'package:shelf_new/autthControllers/google_identity_controller.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 class UserRoutes {
@@ -18,6 +19,8 @@ class UserRoutes {
     // AWS Cognito Auth User Routes
 
     // Google Identity Auth User Routes
+    router.post('/googlelogin', (Request request) => GoogleIdentityAuthController().googlelogin(request));
+    router.post('/googlelogout', (Request request) => GoogleIdentityAuthController().googlelogout(request));
 
     // Okta Auth User Routes
 

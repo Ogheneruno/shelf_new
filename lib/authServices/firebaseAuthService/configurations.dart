@@ -1,6 +1,6 @@
 class Configurations {
   static const firebaseConfig = {
-    'apiKey': "AIzaSyDCKmpxpaV9qyhx2hUxEjhHrMrpewsOVcY",
+    'apiKey': "your-google-api-key",
     'authDomain': "aortem-dev-authservice.firebaseapp.com",
     'projectId': "aortem-dev-authservice",
     'storageBucket': "aortem-dev-authservice.appspot.com",
